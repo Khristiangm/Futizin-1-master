@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etLocalPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Local da Partida"
+        android:inputType="textPersonName"
+        android:background="@drawable/border" />/>
+
+    <EditText
+        android:id="@+id/etHorarioPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etLocalPartida"
+        android:layout_alignStart="@+id/etLocalPartida"
+        android:layout_below="@+id/etLocalPartida"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Horario da Partida"
+        android:inputType="textPersonName"
+        android:background="@drawable/border" />/>
+
+    <EditText
+        android:id="@+id/etDataPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:hint="Data da Partida"
+        android:inputType="textPersonName"
+        android:background="@drawable/border"
+        android:layout_below="@+id/etHorarioPartida"
+        android:layout_alignStart="@+id/etHorarioPartida" /><![CDATA[/>
+
+    />
+
+
+
+    />
+
+
+
+    />
+
+    ]]>
+
+    <Button
+        android:id="@+id/btn_CriarPartida"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Criar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="39dp" />
+
+    <EditText
+        android:id="@+id/etFaixaEtaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etDataPartida"
+        android:layout_below="@+id/etDataPartida"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Faixa Etaria"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etValorPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etFaixaEtaria"
+        android:layout_below="@+id/etFaixaEtaria"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Valor da Partida"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etQuantidadeJogadores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etValorPartida"
+        android:layout_below="@+id/etValorPartida"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Quantidade de Jogadores"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
