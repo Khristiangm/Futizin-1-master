@@ -81,50 +81,5 @@ public class RegistroActivity extends Activity {
 
     }
 
-    /*public void register(View view) {
-        boolean granted = true;
-
-        if (nome_usuario.getText().toString().isEmpty()) {
-            etNomeUsuario.setBackground(getDrawable(R.drawable.border_error));
-            Toast.makeText(this, "Campo Incorreto!.", Toast.LENGTH_SHORT).show();
-            granted = false;
-        } else {
-            etNomeUsuario.setBackground(getDrawable(R.drawable.border));
-        }
-        if (etEmailUsuario.getText().toString().isEmpty()) {
-            etEmailUsuario.setBackground(getDrawable(R.drawable.border_error));
-            Toast.makeText(this, "Campo Incorreto!.", Toast.LENGTH_SHORT).show();
-            granted = false;
-        } else {
-            etNomeUsuario.setBackground(getDrawable(R.drawable.border));
-        }
-        if (etDataNascimentoUsuario.getText().toString().isEmpty()) {
-            etDataNascimentoUsuario.setBackground(getDrawable(R.drawable.border_error));
-            Toast.makeText(this, "Campo Incorreto!.", Toast.LENGTH_SHORT).show();
-            granted = false;
-        } else {
-            etNomeUsuario.setBackground(getDrawable(R.drawable.border));
-        }
-        if (etContatoUsuario.getText().toString().isEmpty()) {
-            etContatoUsuario.setBackground(getDrawable(R.drawable.border_error));
-            Toast.makeText(this, "Campo Incorreto!.", Toast.LENGTH_SHORT).show();
-            granted = false;
-        } else {
-            etNomeUsuario.setBackground(getDrawable(R.drawable.border));
-        }
-        if (etSenhaUsuario.getText().toString().isEmpty()) {
-            etSenhaUsuario.setBackground(getDrawable(R.drawable.border_error));
-            Toast.makeText(this, "Campo Incorreto!.", Toast.LENGTH_SHORT).show();
-            granted = false;
-        } else {
-            etNomeUsuario.setBackground(getDrawable(R.drawable.border));
-        }
-
-        if (granted == true) {
-            Toast.makeText(this, "Registrado Com Sucesso!.", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
-            startActivity(intent);
-        }*/
-
 }
 
