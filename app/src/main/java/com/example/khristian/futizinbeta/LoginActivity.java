@@ -35,6 +35,7 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
         FacebookSdk.sdkInitialize(getApplicationContext());
 
+
         final EditText etUsuarioLogin = (EditText) findViewById(R.id.etUsuarioLogin);
         final EditText etUsuarioSenha = (EditText) findViewById(R.id.etUsuarioSenha);
         final Button btnLogin = (Button) findViewById(R.id.btn_Login);
