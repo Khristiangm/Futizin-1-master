@@ -45,25 +45,25 @@ public class PartidaAdapter extends ArrayAdapter<Partida> {
             TextView textvalor = (TextView) localView.findViewById(R.id.textValor);
 
             if (textID != null) {
-                textID.setText(String.valueOf(partida.getID()));
+                textID.setText("ID da Partida: " + String.valueOf(partida.getID()));
             }
             if (textlocal != null) {
-                textlocal.setText(partida.getLocal());
+                textlocal.setText("Quadra: " + partida.getLocal());
             }
             if (textdata != null) {
-                textdata.setText(partida.getData());
+                textdata.setText("Data da partida: " + partida.getData());
             }
             if (texthorario != null) {
-                texthorario.setText(String.valueOf(partida.getHorario()));
+                texthorario.setText("Horário da Partida: " + String.valueOf(partida.getHorario()));
             }
             if (textfaixaEtaria != null) {
-                textfaixaEtaria.setText(String.valueOf(partida.getFaixaEtaria()));
+                textfaixaEtaria.setText("Faixa etária: " + String.valueOf(partida.getFaixaEtaria()));
             }
             if (textquantidadejogadores != null) {
-                textquantidadejogadores.setText(String.valueOf(partida.getQuantidadeJogadores()));
+                textquantidadejogadores.setText("Faltam " + String.valueOf(partida.getQuantidadeJogadores())+ " jogadores para dar jogo");
             }
             if (textvalor != null) {
-                textvalor.setText(String.valueOf(partida.getValor()));
+                textvalor.setText(String.valueOf("Valor a ser pago: " + partida.getValor()));
             }
         }
         return localView;
