@@ -7,11 +7,13 @@
 
     <Button
         android:id="@+id/btn_Login"
+        style="@style/button_rounded_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/tvRegistrar"
+        android:layout_alignEnd="@+id/etUsuarioSenha"
         android:layout_alignParentBottom="false"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/etUsuarioSenha"
         android:layout_marginBottom="17dp"
         android:text="Login" />
 
@@ -25,19 +27,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
         android:ems="10"
+        android:fontFamily="sans-serif"
         android:hint="Digite seu Login"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/etUsuarioSenha"
-        style="@style/editText_style"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/btn_Login"
-        android:layout_alignStart="@+id/etUsuarioLogin"
-        android:layout_marginBottom="16dp"
-        android:ems="10"
-        android:hint="Digite Sua Senha"
         android:inputType="textPersonName" />
 
 
@@ -58,13 +49,17 @@
         android:layout_marginBottom="13dp"
         android:text="Registre-se" />
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="300dp"
-        android:scaleType="centerInside"
-        app:srcCompat="@drawable/logofutebol"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/etUsuarioLogin" />
+    <EditText
+        android:id="@+id/etUsuarioSenha"
+        style="@style/editText_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_Login"
+        android:layout_alignStart="@+id/etUsuarioLogin"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword" />
+
 </RelativeLayout>

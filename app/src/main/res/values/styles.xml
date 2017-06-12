@@ -12,4 +12,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:ems">10</item>
     </style>
+    <style name="button_rounded_style">
+        <item name="android:background">@drawable/button_rounded</item>
+    </style>
 </resources>

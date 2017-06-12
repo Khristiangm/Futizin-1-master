@@ -9,14 +9,14 @@ public class Partida {
     private String local;
     private String data;
     private String horario;
-    private int faixaEtaria;
+    private String faixaEtaria;
     private int valor;
     private int quantidadeJogadores;
 
     public Partida(){}//INICIANDO O CONSTRUTOR QUE TEM A FUNCAO DE INICIAR O OBJETO.
 
     //ESTA FUNCAO FAZ A REFERENCIA AO PROPRIO OBJETO.
-    public Partida(Long ID, String local, String data, String horario, int faixaEtaria, int quantidadeJogadores, int valor){
+    public Partida(Long ID, String local, String data, String horario, String faixaEtaria, int quantidadeJogadores, int valor){
         this.ID = ID;
         this.local = local;
         this.data = data;
@@ -44,8 +44,8 @@ public class Partida {
     public String getHorario() {return horario;}
     public void setHorario(String horario) {this.horario = horario;}
 
-    public int getFaixaEtaria() {return faixaEtaria;}
-    public void setFaixaEtaria(int faixaEtaria ) {this.faixaEtaria = faixaEtaria;}
+    public String getFaixaEtaria() {return faixaEtaria;}
+    public void setFaixaEtaria(String faixaEtaria ) {this.faixaEtaria = faixaEtaria;}
 
     public int getValor() {return valor;}
     public void setValor(int valor) {this.valor = valor;}

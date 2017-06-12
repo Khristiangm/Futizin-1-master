@@ -39,51 +39,30 @@
         android:layout_below="@+id/etHorarioPartida"
         android:layout_alignStart="@+id/etHorarioPartida" /><![CDATA[/>
 
-    />
-
-
-
-    />
-
-
-
-    />
-
     ]]>
 
     <Button
+        style="@style/button_rounded_style"
         android:id="@+id/btn_CriarPartida"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Criar"
+        android:text="Criar Partida"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="39dp" />
 
     <EditText
-        android:id="@+id/etFaixaEtaria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/etDataPartida"
-        android:layout_below="@+id/etDataPartida"
-        android:layout_marginTop="17dp"
-        android:background="@drawable/border"
-        android:ems="10"
-        android:hint="Faixa Etaria"
-        android:inputType="number" />
-
-    <EditText
         android:id="@+id/etValorPartida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/etFaixaEtaria"
-        android:layout_below="@+id/etFaixaEtaria"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="17dp"
         android:background="@drawable/border"
         android:ems="10"
         android:hint="Valor da Partida"
-        android:inputType="number" />
+        android:inputType="number"
+        android:layout_below="@+id/spFaixaEtaria"
+        android:layout_alignStart="@+id/etDataPartida" />
 
     <EditText
         android:id="@+id/etQuantidadeJogadores"
@@ -96,5 +75,23 @@
         android:ems="10"
         android:hint="Quantidade de Jogadores"
         android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spFaixaEtaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border"
+        android:layout_below="@+id/tvFaixaEtaria"
+        android:layout_alignStart="@+id/etValorPartida" />
+
+    <TextView
+        android:id="@+id/tvFaixaEtaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/spFaixaEtaria"
+        android:layout_below="@+id/etDataPartida"
+        android:layout_marginTop="12dp"
+        android:text="Faixa Etaria" />
 
 </RelativeLayout>

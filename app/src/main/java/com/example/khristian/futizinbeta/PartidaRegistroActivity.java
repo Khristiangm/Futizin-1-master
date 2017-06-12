@@ -5,8 +5,11 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
@@ -27,14 +30,19 @@ public class PartidaRegistroActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_criar_partida);
 
+        final TextView tvFaixaEtaria = (TextView) findViewById(R.id.tvFaixaEtaria);
         final EditText etLocalPartida = (EditText) findViewById(R.id.etLocalPartida);
         final EditText etHorarioPartida = (EditText) findViewById(R.id.etHorarioPartida);
         final EditText etDataPartida = (EditText) findViewById(R.id.etDataPartida);
-        final EditText etFaixaEtaria = (EditText) findViewById(R.id.etFaixaEtaria);
+        final Spinner spFaixaEtaria = (Spinner) findViewById(R.id.spFaixaEtaria);
         final EditText etValorPartida = (EditText) findViewById(R.id.etValorPartida);
         final EditText etQuantidadeJogadores = (EditText) findViewById(R.id.etQuantidadeJogadores);
         final Button btnCriarPartida = (Button) findViewById(R.id.btn_CriarPartida);
 
+        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(PartidaRegistroActivity.this
+                , android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.faixa_etaria));
+        spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spFaixaEtaria.setAdapter(spinnerAdapter);
 
         btnCriarPartida.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +50,7 @@ public class PartidaRegistroActivity extends Activity {
                 final String local = etLocalPartida.getText().toString();
                 final String data = etDataPartida.getText().toString();
                 final String horario = etHorarioPartida.getText().toString();
-                final int faixa_etaria = Integer.parseInt(etFaixaEtaria.getText().toString());
+                final String faixa_etaria = spFaixaEtaria.getSelectedItem().toString();
                 final int valor = Integer.parseInt(etValorPartida.getText().toString());
                 final int quantidade_jogadores = Integer.parseInt(etQuantidadeJogadores.getText().toString());
 

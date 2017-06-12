@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Futizinbeta</string>
     <string name="facebook_app_id">1380294662005920</string>
+
+    <string-array name="faixa_etaria">
+        <item>10 - 15</item>
+        <item>15 - 20</item>
+        <item>25 - 30</item>
+        <item>30 - 35</item>
+        <item>acima 40</item>
+    </string-array>
 </resources>

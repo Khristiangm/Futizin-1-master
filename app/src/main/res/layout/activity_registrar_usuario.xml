@@ -64,6 +64,7 @@
         android:layout_centerHorizontal="true" />/>
 
     <Button
+        style="@style/button_rounded_style"
         android:id="@+id/btn_RegistrarUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

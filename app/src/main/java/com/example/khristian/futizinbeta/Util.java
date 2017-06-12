@@ -18,7 +18,7 @@ public class Util {
             partida.setData(json.getString("data"));
             partida.setLocal(json.getString("local"));
             partida.setHorario(json.getString("horario"));
-            partida.setFaixaEtaria(json.getInt("faixa_etaria"));
+            partida.setFaixaEtaria(json.getString("faixa_etaria"));
             partida.setValor(json.getInt("valor"));
             partida.setQuantidadeJogadores(json.getInt("quantidade_jogadores"));
         }catch (JSONException e){
